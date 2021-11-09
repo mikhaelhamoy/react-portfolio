@@ -1,5 +1,4 @@
 import React from 'react';
-import { converTitleToFilename } from '../../utils/helpers';
 import { FaGithub } from 'react-icons/fa';
 
 function Portfolio() {
@@ -41,7 +40,7 @@ function Portfolio() {
     <section className="my-5">
       <h1>Portfolio</h1>
       <div className="flex-row">
-        {projects.map(({ title, application, github }) => (
+        {projects.map(({ title, application, github }, i) => (
           <div>
             <h5>
               <a className="mx-2 projectLink" href={application} target="_blank" rel="noreferrer noopener">{title}</a>
@@ -49,7 +48,7 @@ function Portfolio() {
             </h5>
             
             <img
-              src={require(`../../assets/project/${converTitleToFilename(title)}`).default}
+              src={require(`../../assets/project/${i}.jpg`).default}
               alt={title}
               className="img-thumbnail mx-1"
               key={title}
