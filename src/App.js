@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [navComponentSelected, setNavComponentSelected] = useState('about');
@@ -21,6 +22,9 @@ function App() {
             ),
             'contact': (
               <ContactForm></ContactForm>
+            ),
+            'portfolio': (
+              <Portfolio></Portfolio>
             )
           }[navComponentSelected]}
       </main>

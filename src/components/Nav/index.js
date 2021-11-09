@@ -10,7 +10,7 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          MH
+          Mikhael Hamoy
         </a>
       </h2>
       <nav>
@@ -18,11 +18,11 @@ function Nav(props) {
           <li className={`mx-2 ${(navComponentSelected === 'about') && 'navActive'}`}>
             <span onClick={() => setNavComponentSelected('about')}>About me</span>
           </li>
-          <li className={`mx-2 ${(navComponentSelected === 'contact') && 'navActive'}`}>
-            <span onClick={() => setNavComponentSelected('contact')}>Contact</span>
-          </li>
           <li className={`mx-2 ${(navComponentSelected === 'portfolio') && 'navActive'}`}>
             <span onClick={() => setNavComponentSelected('portfolio')}>Porfolio</span>
+          </li>
+          <li className={`mx-2 ${(navComponentSelected === 'contact') && 'navActive'}`}>
+            <span onClick={() => setNavComponentSelected('contact')}>Contact</span>
           </li>
           <li className={`mx-2 ${(navComponentSelected === 'resume') && 'navActive'}`}>
             <span onClick={() => setNavComponentSelected('resume')}>Resume</span>

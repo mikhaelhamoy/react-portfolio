@@ -1,9 +1,10 @@
 
-main {
+main, header {
 	margin: 0 auto;
 	max-width: 90%;
-  padding: 50px 30px;
+  padding: 25px 30px;
 }
+
 :root {
   --primary: #8c54ff;
   --secondary: #F3A847;
@@ -238,8 +239,13 @@ textarea {
 .img-thumbnail {
   width: auto;
   height: 300px;
-  margin-bottom: 50px;
+  margin: 0 20px 50px 20px;
   cursor: pointer;
+  opacity: .8;
+}
+
+.img-thumbnail:hover {
+  opacity: 1;
 }
 
 .modalBackdrop {
@@ -287,9 +293,17 @@ a {
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;
-	
 }
 
 .navActive {
   color: var(--secondary);
+}
+
+.projectLink {
+  color: var(--light);
+}
+
+.projectLink:hover {
+  color: var(--dark);
+  background-color: var(--light);
 }
