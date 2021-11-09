@@ -3,6 +3,7 @@ import './App.css';
 
 import Nav from './components/Nav';
 import About from './components/About';
+import ContactForm from './components/Contact';
 
 function App() {
   const [navComponentSelected, setNavComponentSelected] = useState('about');
@@ -14,7 +15,14 @@ function App() {
         setNavComponentSelected={setNavComponentSelected}
       ></Nav>
       <main>
-          <About></About>
+          {{
+            'about': (
+              <About></About>
+            ),
+            'contact': (
+              <ContactForm></ContactForm>
+            )
+          }[navComponentSelected]}
       </main>
     </div>
   );
