@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   const [navComponentSelected, setNavComponentSelected] = useState('about');
@@ -27,6 +28,7 @@ function App() {
               <Portfolio></Portfolio>
             )
           }[navComponentSelected]}
+          <Footer />
       </main>
     </div>
   );

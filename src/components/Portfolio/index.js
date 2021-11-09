@@ -2,7 +2,7 @@ import React from 'react';
 import { converTitleToFilename } from '../../utils/helpers';
 import { FaGithub } from 'react-icons/fa';
 
-const Portfolio = () => {
+function Portfolio() {
 
   const projects = [
     {

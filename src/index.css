@@ -299,11 +299,16 @@ a {
   color: var(--secondary);
 }
 
-.projectLink {
+.projectLink, .myLink {
   color: var(--light);
 }
 
-.projectLink:hover {
+.projectLink:hover, .myLink:hover {
   color: var(--dark);
   background-color: var(--light);
+  text-decoration: none;
+}
+
+footer {
+  margin: 0 auto;
 }
