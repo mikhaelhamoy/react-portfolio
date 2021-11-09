@@ -8,7 +8,7 @@ function Portfolio() {
     {
       title: 'The Tech Blog',
       application: 'https://mlhamoy-tech-blog.herokuapp.com/',
-      BfaBaby: 'https://github.com/mikhaelhamoy/challenge-week-14'
+      github: 'https://github.com/mikhaelhamoy/challenge-week-14'
     },
     {
       title: 'Just Tech News',
@@ -38,7 +38,8 @@ function Portfolio() {
   ];
 
   return (
-    <div>
+    <section className="my-5">
+      <h1>Portfolio</h1>
       <div className="flex-row">
         {projects.map(({ title, application, github }) => (
           <div>
@@ -56,7 +57,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

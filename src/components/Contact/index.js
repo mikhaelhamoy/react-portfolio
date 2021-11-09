@@ -36,18 +36,18 @@ function ContactForm() {
 
   // JSX
   return (
-    <section>
-      <h1 data-testid="contact-me">Contact me</h1>
+    <section className="my-5">
+      <h1>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className="my-1">
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
+        <div className="my-1">
           <label htmlFor="email">Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
+        <div className="my-1">
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
@@ -56,7 +56,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="submit-button" type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   )

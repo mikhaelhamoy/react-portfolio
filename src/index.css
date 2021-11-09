@@ -147,16 +147,13 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-li {
-  list-style: none;
-}
-
 nav a:hover {
   text-decoration: none;
 }
 
 nav  li {
   cursor: pointer;
+  list-style: none;
 }
 
 textarea {
@@ -299,16 +296,16 @@ a {
   color: var(--secondary);
 }
 
-.projectLink, .myLink {
+.projectLink, .myLink, .downloadLink {
   color: var(--light);
 }
 
-.projectLink:hover, .myLink:hover {
+.projectLink:hover, .myLink:hover, .downloadLink:hover {
   color: var(--dark);
   background-color: var(--light);
   text-decoration: none;
 }
 
 footer {
-  margin: 0 auto;
+  justify-content: center;
 }
