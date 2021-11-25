@@ -10,9 +10,9 @@ function Portfolio() {
       github: 'https://github.com/mikhaelhamoy/challenge-week-14'
     },
     {
-      title: 'Just Tech News',
-      application: 'https://mhamoy-just-tech-news.herokuapp.com/',
-      github: 'https://github.com/mikhaelhamoy/just-tech-news'
+      title: 'Hire Me',
+      application: 'https://enigmatic-headland-23847.herokuapp.com/',
+      github: 'https://github.com/csarmiento17/hire-me'
     },
     {
       title: 'Note Taker',
